@@ -1,0 +1,153 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #90EE90;
+}
+
+/* Contenedor principal */
+.wrapper {
+    width: 430px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Encabezado */
+.wrapper header {
+    color: black;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+/* Formulario de carga */
+.wrapper form {
+    height: 167px;
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed black;
+}
+
+/* Estilos comunes para íconos y texto en el formulario */
+form i, form p {
+    color: black;
+}
+
+form i {
+    font-size: 50px;
+}
+
+form p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Estilos compartidos entre secciones y área de progreso */
+.section .row, .progress-area .row {
+    background: #e9f0ff;
+    margin-bottom: 10px;
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section .row i, .progress-area .row i {
+    font-size: 30px;
+    color: #6990f2;
+}
+
+.section .row .content, .progress-area .row .content {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.section .details span {
+    font-size: 14px;
+}
+
+.progress-area .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+/* Estilos para la barra de progreso */
+.progress-area .progress-bar, .progress-bar .progress {
+    height: 6px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.progress-area .progress-bar {
+    background: #fff;
+    margin-bottom: 4px;
+}
+
+.progress-bar .progress {
+    background: #6990f2;
+}
+
+/* Área de elementos cargados */
+.uploaded-area {
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.uploaded-area .row .content {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.uploaded-area .details .size {
+    font-size: 11px;
+    color: #404040;
+}
+
+.uploaded-area .fa-check {
+    font-size: 16px;
+}
+#hero{
+    min-height: 100vh;
+    position: relative;
+}
+video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.capa{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
